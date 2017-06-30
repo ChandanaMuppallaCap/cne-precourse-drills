@@ -6,13 +6,13 @@ import java.util.Iterator;
 public class Test {
 	public static void main(String[] args) {
 		Business b=new Business("MyHomeAddress");
-		Address address=new Address("charles street","columbs","ohio","12341");
-		Address address1=new Address("charles street","columbs","ohio","12341");
+		Address address=new Address("charles","columbs","ohio","12341");
+		
 		List<Address>al=b.getAddresses();
 
 
 		b.addAddress(address);
-		b.addAddress(address1);
+
 
 
 		Iterator itr = al.iterator();

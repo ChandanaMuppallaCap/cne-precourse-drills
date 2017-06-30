@@ -6,7 +6,7 @@ public class Address {
 	private String state;
 	private String zip;
 
-	Address(String street, String city, String state, String zip )
+	public Address(String street, String city, String state, String zip )
 	{
 		this.street=street;
 		this.city=city;
@@ -41,6 +41,6 @@ public class Address {
 	@Override
 	public String toString( )
 	{
-		return "<"+street+">"+" "+"<"+city+">"+" "+"<"+state+">"+" "+"<"+zip+">"+" ";
+		return    street+", "+city+", "+state+" "+zip;
 	}
 }
